@@ -10,12 +10,12 @@ export class AuthController {
     // Sign up Controller
     @Post("/signup")
     signUp() {
-        return "Sign up Controller";
+        return this.authService.signUp("juna@gmai.com", "123456");
     }
 
     // Sign in Controller
     @Post("/signin")
     signIn() {
-        return "Sign in Controller";
+        return this.authService.signIn("dave@gmail.com", "123456");
     }
 }
