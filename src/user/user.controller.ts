@@ -17,7 +17,19 @@ export class UserController {
     constructor(private userService: UserService) { }
     @Get('/profile')
     getMe(@GetUser() user: User) {
-        return user;
+
+        const { id, email, firstName, lastName, createdAt, updatedAt } = user;
+
+        return {
+            id,
+            data: {
+                email,
+                firstName,
+                lastName,
+            },
+            createdAt,
+            updatedAt,
+        };
     }
 
     @Patch()

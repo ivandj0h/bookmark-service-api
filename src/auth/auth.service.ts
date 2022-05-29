@@ -62,20 +62,13 @@ export class AuthService {
             }
         })
 
-        // if user does not exist, throw Exception!
         if (!user) throw new ForbiddenException("Email or password is incorrect!");
-
-
-        // if user exists, compare password
         const matchPassword = await argon.verify(
             await argon.hash(dto.password),
             dto.password,
         );
 
-        // if password is incorrect, throw Exception!
         if (!matchPassword) throw new ForbiddenException("Email or password did not match!");
-
-        // if password is correct, return user
         return this.signToken(user.id, user.email);
     }
 
