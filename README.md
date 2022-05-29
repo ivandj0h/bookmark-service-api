@@ -14,39 +14,39 @@
 ## Installation
 
 ```bash
-$ npm install
+$ npm or yarn install
 ```
 
 ## Running the app
 
 ```bash
 # development
-$ npm run start
+$ npm or yarn run start
 
 # watch mode
-$ npm run start:dev
+$ npm or yarn run start:dev
 
 # production mode
-$ npm run start:prod
+$ npm or yarn run start:prod
 ```
 
 ## Test
 
 ```bash
 # unit tests
-$ npm run test
+$ npm or yarn run test
 
 # e2e tests
-$ npm run test:e2e
+$ npm or yarn run test:e2e
 
 # test coverage
-$ npm run test:cov
+$ npm or yarn run test:cov
 ```
 
 ## Credits
 
-- Ivandjoh
-- Delvin
+- `Ivandjoh` ( Author )
+- `Delvin` ( Reviewer )
 
 ## License
 
